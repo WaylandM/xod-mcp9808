@@ -1,0 +1,61 @@
+{
+  "description": "Get resolution mode of device. MCP9808 has four resolution modes:\n\nMode    Resolution    Sample time\n 00h      0.5°C             30 ms\n 01h      0.25°C           65 ms\n 02h      0.125°C        130 ms\n 03h      0.0625°C      250 ms\n",
+  "nodes": [
+    {
+      "id": "B1mKDE9dL",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Resolution mode. Should be one of the following four values:\n\nMode    Resolution    Sample time\n 00h      0.5°C             30 ms\n 01h      0.25°C           65 ms\n 02h      0.125°C        130 ms\n 03h      0.0625°C      250 ms\n",
+      "id": "HyxGdE5d8",
+      "label": "RESOLUTION",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-byte"
+    },
+    {
+      "description": "Pulse on completion.",
+      "id": "rJpqOVqd8",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "A MCP9808 device.",
+      "id": "rk9KD4c_8",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-mcp9808-device"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "description": "Update. Trigger read of device resolution.",
+      "id": "ryFjDV9u8",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    }
+  ]
+}

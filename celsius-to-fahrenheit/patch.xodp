@@ -1,0 +1,109 @@
+{
+  "description": "Convert from Celsius to Fahrenheit.",
+  "links": [
+    {
+      "id": "B1ZEPV5_L",
+      "input": {
+        "nodeId": "S1sQvNcuU",
+        "pinKey": "BJnQUR_BwyZ"
+      },
+      "output": {
+        "nodeId": "H1sxDV5d8",
+        "pinKey": "BkqLCOSw1W"
+      }
+    },
+    {
+      "id": "By1Mv4qO8",
+      "input": {
+        "nodeId": "H1sxDV5d8",
+        "pinKey": "SkdIRuBD1b"
+      },
+      "output": {
+        "nodeId": "H1VJwEq_I",
+        "pinKey": "BkQzLCurwJZ"
+      }
+    },
+    {
+      "id": "HyQVwNc_U",
+      "input": {
+        "nodeId": "S1hFU4qd8",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "S1sQvNcuU",
+        "pinKey": "SyomIRurDJ-"
+      }
+    },
+    {
+      "id": "rkvyvNcdI",
+      "input": {
+        "nodeId": "H1VJwEq_I",
+        "pinKey": "B1GfLR_SPk-"
+      },
+      "output": {
+        "nodeId": "HksrUVc_I",
+        "pinKey": "__out__"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "SJ4zUC_BD1-": "9"
+      },
+      "id": "H1VJwEq_I",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/core/multiply"
+    },
+    {
+      "boundLiterals": {
+        "BytUCdHD1-": "5"
+      },
+      "id": "H1sxDV5d8",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/core/divide"
+    },
+    {
+      "description": "Temperature on Celsius scale.",
+      "id": "HksrUVc_I",
+      "label": "CELCIUS",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Temperature on Fahrenheit scale.",
+      "id": "S1hFU4qd8",
+      "label": "FAHRENHEIT",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "boundLiterals": {
+        "HkqmLAOrD1W": "32"
+      },
+      "id": "S1sQvNcuU",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 3
+      },
+      "type": "xod/core/add"
+    }
+  ]
+}

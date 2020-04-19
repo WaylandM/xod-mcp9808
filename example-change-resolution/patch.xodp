@@ -1,0 +1,141 @@
+{
+  "description": "Demonstration of how to change the resolution mode of the MCP9808. Here the resolution mode is changed from 03h (0.0625°C) to 01h ( 0.5°C). Run this patch in the debugger.",
+  "links": [
+    {
+      "id": "B1815Nq_L",
+      "input": {
+        "nodeId": "rkIptV9_U",
+        "pinKey": "rk9KD4c_8"
+      },
+      "output": {
+        "nodeId": "BkQpKEqdI",
+        "pinKey": "rkMr8JcuL"
+      }
+    },
+    {
+      "id": "B1bP9Bc_8",
+      "input": {
+        "nodeId": "Hk7LcSqdU",
+        "pinKey": "rk9KD4c_8"
+      },
+      "output": {
+        "nodeId": "BkQpKEqdI",
+        "pinKey": "rkMr8JcuL"
+      }
+    },
+    {
+      "id": "SJ1lq45uU",
+      "input": {
+        "nodeId": "Bks154cO8",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "rkIptV9_U",
+        "pinKey": "HyxGdE5d8"
+      }
+    },
+    {
+      "id": "SkoG9S9d8",
+      "input": {
+        "nodeId": "BJW-cSquL",
+        "pinKey": "Hk9SPBqO8"
+      },
+      "output": {
+        "nodeId": "rkIptV9_U",
+        "pinKey": "rJpqOVqd8"
+      }
+    },
+    {
+      "id": "Sy6-5B9O8",
+      "input": {
+        "nodeId": "BJW-cSquL",
+        "pinKey": "HkM_549O8"
+      },
+      "output": {
+        "nodeId": "BkQpKEqdI",
+        "pinKey": "rkMr8JcuL"
+      }
+    },
+    {
+      "id": "rJ8Dqr9uI",
+      "input": {
+        "nodeId": "BkoNqHqdI",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "Hk7LcSqdU",
+        "pinKey": "HyxGdE5d8"
+      }
+    },
+    {
+      "id": "rJkD9HcuU",
+      "input": {
+        "nodeId": "Hk7LcSqdU",
+        "pinKey": "ryFjDV9u8"
+      },
+      "output": {
+        "nodeId": "BJW-cSquL",
+        "pinKey": "SJaL9EcdI"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "HkeAqV5_8": "00h"
+      },
+      "id": "BJW-cSquL",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 3
+      },
+      "type": "@/set-resolution"
+    },
+    {
+      "id": "BkQpKEqdI",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "@/mcp9808-device"
+    },
+    {
+      "id": "BkoNqHqdI",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 5
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "Bks154cO8",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "Hk7LcSqdU",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 4
+      },
+      "type": "@/get-resolution"
+    },
+    {
+      "id": "rkIptV9_U",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "@/get-resolution"
+    }
+  ]
+}

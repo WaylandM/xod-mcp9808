@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "ByPBNNq_I",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": -26
+      },
+      "type": "@/mcp9808-device"
+    }
+  ]
+}
