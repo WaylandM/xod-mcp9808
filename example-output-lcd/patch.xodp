@@ -1,13 +1,85 @@
 {
+  "links": [
+    {
+      "id": "BkRDBGoOI",
+      "input": {
+        "nodeId": "Syq8SfouI",
+        "pinKey": "BkGgoWjuL"
+      },
+      "output": {
+        "nodeId": "HJNPBMj_I",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "HywMpGsd8",
+      "input": {
+        "nodeId": "rkZM6MsdU",
+        "pinKey": "Hkqu9oaWb"
+      },
+      "output": {
+        "nodeId": "Syq8SfouI",
+        "pinKey": "rJq3oZs_L"
+      }
+    },
+    {
+      "id": "SyjfazsdL",
+      "input": {
+        "nodeId": "Syix8VcuL",
+        "pinKey": "rJgnw0417B"
+      },
+      "output": {
+        "nodeId": "rkZM6MsdU",
+        "pinKey": "rksccsp-W"
+      }
+    }
+  ],
   "nodes": [
     {
+      "boundLiterals": {
+        "B13SCNhl-": "2"
+      },
+      "id": "HJNPBMj_I",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 2
+      },
+      "type": "xod/core/clock"
+    },
+    {
+      "boundLiterals": {
+        "BJ3DAE1QS": "\"Temperature\"",
+        "rkedCVkXS": "38h"
+      },
       "id": "Syix8VcuL",
       "position": {
         "units": "slots",
-        "x": 4,
-        "y": 2
+        "x": 3,
+        "y": 5
       },
       "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
+    },
+    {
+      "id": "Syq8SfouI",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 3
+      },
+      "type": "@/thermometer"
+    },
+    {
+      "boundLiterals": {
+        "BkeKcj6ZZ": "\" C\""
+      },
+      "id": "rkZM6MsdU",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 4
+      },
+      "type": "xod/core/concat"
     }
   ]
 }

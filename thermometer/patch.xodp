@@ -1,4 +1,5 @@
 {
+  "description": "Combines low level nodes to create a simple to use thermometer. Outputs temperature in °C (can be converted to °F using celsius-to-fahrenheit node). To conserve energy the MCP9808 is put into sleep mode between temperature readings. You can maximize sampling rate by not switching off MCP9808 between reads (see example-max-sample-rate).",
   "links": [
     {
       "id": "B1pKs-o_L",
@@ -12,13 +13,13 @@
       }
     },
     {
-      "id": "BJpcibjdI",
+      "id": "BkFvzzid8",
       "input": {
-        "nodeId": "S1H6c-o_I",
-        "pinKey": "SJxkrUbsOI"
+        "nodeId": "ryto9-jdL",
+        "pinKey": "Skl3E1cu8"
       },
       "output": {
-        "nodeId": "HyucsWoOL",
+        "nodeId": "SyDVzMou8",
         "pinKey": "__out__"
       }
     },
@@ -53,6 +54,17 @@
       "output": {
         "nodeId": "BkGgoWjuL",
         "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Hk1cGMs_8",
+      "input": {
+        "nodeId": "S1H6c-o_I",
+        "pinKey": "SJxkrUbsOI"
+      },
+      "output": {
+        "nodeId": "ryto9-jdL",
+        "pinKey": "rkMr8JcuL"
       }
     },
     {
@@ -98,6 +110,17 @@
         "nodeId": "ryto9-jdL",
         "pinKey": "rkMr8JcuL"
       }
+    },
+    {
+      "id": "rydwMzsOL",
+      "input": {
+        "nodeId": "ryto9-jdL",
+        "pinKey": "SJtiQyqOU"
+      },
+      "output": {
+        "nodeId": "S1aQGGjOI",
+        "pinKey": "__out__"
+      }
     }
   ],
   "nodes": [
@@ -108,7 +131,7 @@
       "position": {
         "units": "slots",
         "x": 4,
-        "y": 1
+        "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
     },
@@ -133,16 +156,6 @@
       "type": "@/shutdown"
     },
     {
-      "id": "HyucsWoOL",
-      "label": "DEV",
-      "position": {
-        "units": "slots",
-        "x": 1,
-        "y": 3
-      },
-      "type": "xod/patch-nodes/from-bus"
-    },
-    {
       "id": "S1H6c-o_I",
       "position": {
         "units": "slots",
@@ -150,6 +163,20 @@
         "y": 3
       },
       "type": "@/read-temperature"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "18h"
+      },
+      "description": "I²C address of the mcp9808 device. Default is 18h. The I²C address of the device can be changed using the address select pins (see https://learn.adafruit.com/adafruit-mcp9808-precision-i2c-temperature-sensor-guide/arduino-code).",
+      "id": "S1aQGGjOI",
+      "label": "ADDRESS",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
     },
     {
       "id": "SkHjobo_U",
@@ -160,6 +187,20 @@
         "y": 4
       },
       "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "03h"
+      },
+      "description": "Set resolution of measurements. Four modes are available:\n\nMode    Resolution    Sample time\n 00h      0.5°C             30 ms\n 01h      0.25°C           65 ms\n 02h      0.125°C        130 ms\n 03h      0.0625°C      250 ms\n",
+      "id": "SyDVzMou8",
+      "label": "RESOLUTION",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
     },
     {
       "id": "r1mhcZi_U",
@@ -186,7 +227,7 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": 2,
+        "x": 1,
         "y": 2
       },
       "type": "xod/patch-nodes/to-bus"

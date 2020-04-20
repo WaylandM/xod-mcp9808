@@ -29,6 +29,7 @@
       }
     }
   ],
+  "description": "Patch to demonstrate how to maximize sampling rate for a given resolution, by not switching off MCP9808 between reads.",
   "links": [
     {
       "id": "BJlNJGsO8",
