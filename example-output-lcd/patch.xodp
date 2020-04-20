@@ -1,4 +1,5 @@
 {
+  "description": "Patch to demonstrate sending temperature reading to a text LCD.",
   "links": [
     {
       "id": "BkRDBGoOI",

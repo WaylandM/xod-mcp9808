@@ -1,5 +1,5 @@
 {
-  "description": "Set resolution mode of MCP9808 device. Four modes are available:\n\nMode    Resolution    Sample time\n 00h      0.5°C             30 ms\n 01h      0.25°C           65 ms\n 02h      0.125°C        130 ms\n 03h      0.0625°C      250 ms\n",
+  "description": "Set resolution mode of MCP9808 device. Four modes are available (resolution and sample time in parentheses): 00h ( 0.5°C , 30 ms); 01h (0.25°C, 65 ms); 02h (0.125°C, 130 ms); 03h (0.0625°C,  250 ms).",
   "nodes": [
     {
       "id": "Bkm85Nq_L",
@@ -11,7 +11,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Update. Trigger set resolution.",
+      "description": "Update. Trigger set-resolution.",
       "id": "Hk9SPBqO8",
       "label": "UPD",
       "position": {
@@ -36,7 +36,7 @@
       "boundLiterals": {
         "__out__": "03h"
       },
-      "description": "Resolution mode. Choose from following options:\n\nMode    Resolution    Sample time\n 00h      0.5°C             30 ms\n 01h      0.25°C           65 ms\n 02h      0.125°C        130 ms\n 03h      0.0625°C      250 ms\n",
+      "description": "Resolution mode. Choose from following options (resolution and sample time in parentheses): 00h ( 0.5°C , 30 ms); 01h (0.25°C, 65 ms); 02h (0.125°C, 130 ms); 03h (0.0625°C,  250 ms).",
       "id": "HkeAqV5_8",
       "label": "RESOLUTION",
       "position": {

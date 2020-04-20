@@ -1,5 +1,5 @@
 {
-  "description": "Read temperature in degrees Celsius.",
+  "description": "Read temperature in degrees Celsius. Temperature can be converted to Fahrenheit scale using celsius-to-fahrenheit node.",
   "nodes": [
     {
       "id": "HJ1H8Wo_U",

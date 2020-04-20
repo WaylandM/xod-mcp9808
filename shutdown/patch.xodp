@@ -1,5 +1,5 @@
 {
-  "description": "Shutdown MCP9808 device.  Stope temperature sampling and reduces power consumption of MCP9808 device to ~0.1 microampere, stops temperature sampling",
+  "description": "Shutdown MCP9808 device.  Stops temperature sampling and reduces power consumption of MCP9808 device to ~0.1 microampere.",
   "nodes": [
     {
       "description": "Pulse on shutdown.",
