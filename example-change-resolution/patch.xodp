@@ -129,6 +129,9 @@
       "type": "@/get-resolution"
     },
     {
+      "boundLiterals": {
+        "ryFjDV9u8": "On Boot"
+      },
       "id": "rkIptV9_U",
       "position": {
         "units": "slots",

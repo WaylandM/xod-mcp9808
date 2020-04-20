@@ -1,5 +1,5 @@
 {
-  "description": "Wake up MCP9808 and start temperature sampling. Power consumption when sampling is ~200 micro Ampere.",
+  "description": "Wake up MCP9808 and start temperature sampling. Power consumption when sampling is ~200 microampere.",
   "nodes": [
     {
       "id": "H1C_3BcOI",

@@ -1,2 +1,204 @@
 {
+  "links": [
+    {
+      "id": "B1pKs-o_L",
+      "input": {
+        "nodeId": "ryfYo-sOI",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "ryto9-jdL",
+        "pinKey": "rkMr8JcuL"
+      }
+    },
+    {
+      "id": "BJpcibjdI",
+      "input": {
+        "nodeId": "S1H6c-o_I",
+        "pinKey": "SJxkrUbsOI"
+      },
+      "output": {
+        "nodeId": "HyucsWoOL",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BkRGo-o_U",
+      "input": {
+        "nodeId": "H1MT9WiuI",
+        "pinKey": "rya0orquI"
+      },
+      "output": {
+        "nodeId": "S1H6c-o_I",
+        "pinKey": "S1mJBL-odU"
+      }
+    },
+    {
+      "id": "H1zus-j_U",
+      "input": {
+        "nodeId": "BkyPiWsO8",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "H1MT9WiuI",
+        "pinKey": "BkCZhrcOI"
+      }
+    },
+    {
+      "id": "HJtGjWsO8",
+      "input": {
+        "nodeId": "r1mhcZi_U",
+        "pinKey": "S1noarcdI"
+      },
+      "output": {
+        "nodeId": "BkGgoWjuL",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SJeAsZs_8",
+      "input": {
+        "nodeId": "rJq3oZs_L",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "S1H6c-o_I",
+        "pinKey": "rJaH8bou8"
+      }
+    },
+    {
+      "id": "SkFoo-jO8",
+      "input": {
+        "nodeId": "H1MT9WiuI",
+        "pinKey": "H1renr5OI"
+      },
+      "output": {
+        "nodeId": "SkHjobo_U",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Sy3fiWjuL",
+      "input": {
+        "nodeId": "S1H6c-o_I",
+        "pinKey": "HkWJHIbo_8"
+      },
+      "output": {
+        "nodeId": "r1mhcZi_U",
+        "pinKey": "SynATSqd8"
+      }
+    },
+    {
+      "id": "ryS2qWsOI",
+      "input": {
+        "nodeId": "r1mhcZi_U",
+        "pinKey": "rJe3ipBc_I"
+      },
+      "output": {
+        "nodeId": "ryto9-jdL",
+        "pinKey": "rkMr8JcuL"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "description": "Update. Trigger read of temperature.",
+      "id": "BkGgoWjuL",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on read of temperature.",
+      "id": "BkyPiWsO8",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 5
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "H1MT9WiuI",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 4
+      },
+      "type": "@/shutdown"
+    },
+    {
+      "id": "HyucsWoOL",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "S1H6c-o_I",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 3
+      },
+      "type": "@/read-temperature"
+    },
+    {
+      "id": "SkHjobo_U",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "r1mhcZi_U",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "@/wake"
+    },
+    {
+      "description": "Temperature in degrees Celsius.",
+      "id": "rJq3oZs_L",
+      "label": "TempC",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 5
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "ryfYo-sOI",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "ryto9-jdL",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "@/mcp9808-device"
+    }
+  ]
 }

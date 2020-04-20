@@ -1,0 +1,198 @@
+{
+  "comments": [
+    {
+      "content": "Number or reads.",
+      "id": "BkHK6biu8",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": -21
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      }
+    },
+    {
+      "content": "Temp. °F",
+      "id": "S1lFpWidL",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": -21
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      }
+    },
+    {
+      "content": "Temp. °C",
+      "id": "SJz1pZidU",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": -21
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      }
+    }
+  ],
+  "description": "Patch to test thermometer.",
+  "links": [
+    {
+      "id": "BJNRnWi_U",
+      "input": {
+        "nodeId": "Hkvpn-ou8",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "By58hZo_L",
+        "pinKey": "BkyPiWsO8"
+      }
+    },
+    {
+      "id": "BkaO2biOI",
+      "input": {
+        "nodeId": "By58hZo_L",
+        "pinKey": "BkGgoWjuL"
+      },
+      "output": {
+        "nodeId": "Sy4_n-iOU",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "ByagA-o_U",
+      "input": {
+        "nodeId": "SJDR3WsuU",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "Hkvpn-ou8",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "HJ-63WiuI",
+      "input": {
+        "nodeId": "ryPsnZjd8",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "SyD5nZsdU",
+        "pinKey": "S1hFU4qd8"
+      }
+    },
+    {
+      "id": "SJ392bo_L",
+      "input": {
+        "nodeId": "SJ3tnWs_L",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "By58hZo_L",
+        "pinKey": "rJq3oZs_L"
+      }
+    },
+    {
+      "id": "rytcnbj_8",
+      "input": {
+        "nodeId": "SyD5nZsdU",
+        "pinKey": "HksrUVc_I"
+      },
+      "output": {
+        "nodeId": "By58hZo_L",
+        "pinKey": "rJq3oZs_L"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "By58hZo_L",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": -24
+      },
+      "type": "@/thermometer"
+    },
+    {
+      "id": "Hkvpn-ou8",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": -23
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "SJ3tnWs_L",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": -22
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SJDR3WsuU",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": -22
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "boundLiterals": {
+        "B13SCNhl-": "2"
+      },
+      "id": "Sy4_n-iOU",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": -25
+      },
+      "type": "xod/core/clock"
+    },
+    {
+      "id": "SyD5nZsdU",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": -23
+      },
+      "type": "@/celsius-to-fahrenheit"
+    },
+    {
+      "id": "ryPsnZjd8",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": -22
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    }
+  ]
+}

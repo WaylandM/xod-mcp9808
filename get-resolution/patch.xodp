@@ -45,7 +45,7 @@
     },
     {
       "boundLiterals": {
-        "__out__": "On Boot"
+        "__out__": "Never"
       },
       "description": "Update. Trigger read of device resolution.",
       "id": "ryFjDV9u8",

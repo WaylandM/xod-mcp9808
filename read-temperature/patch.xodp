@@ -1,2 +1,61 @@
 {
+  "description": "Read temperature in degrees Celsius.",
+  "nodes": [
+    {
+      "id": "HJ1H8Wo_U",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Never"
+      },
+      "description": "Update. Trigger read.",
+      "id": "HkWJHIbo_8",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "S1mJBL-odU",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "A MCP9808 device.",
+      "id": "SJxkrUbsOI",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-mcp9808-device"
+    },
+    {
+      "description": "Temperature in degrees Celsius.",
+      "id": "rJaH8bou8",
+      "label": "TempC",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    }
+  ]
 }
