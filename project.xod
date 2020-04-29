@@ -1,6 +1,6 @@
 {
-  "description": "Precision I2C temperature sensor. Arduino library for the MCP9808 sensor (https://learn.adafruit.com/adafruit-mcp9808-precision-i2c-temperature-sensor-guide). Wraps https://github.com/adafruit/Adafruit_MCP9808_Library. Device datasheet: https://cdn-shop.adafruit.com/datasheets/MCP9808.pdf",
+  "description": "Precision I²C temperature sensor. Arduino library for the MCP9808 sensor (https://learn.adafruit.com/adafruit-mcp9808-precision-i2c-temperature-sensor-guide). Wraps https://github.com/adafruit/Adafruit_MCP9808_Library. Device datasheet: https://cdn-shop.adafruit.com/datasheets/MCP9808.pdf",
   "license": "BSD 3-Clause",
   "name": "mcp9808-thermometer",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
